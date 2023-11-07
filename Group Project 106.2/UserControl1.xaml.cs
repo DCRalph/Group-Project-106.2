@@ -16,32 +16,18 @@ using System.Windows.Shapes;
 namespace Group_Project_106._2
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserControl1.xaml
     /// </summary>
-    /// 
-
-
-
-
-    public partial class MainWindow : Window
+    public partial class UserControl1 : UserControl
     {
-        public UserControl1 uc = new UserControl1();
-        public MainWindow()
+        public UserControl1()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindowGrid.Children.Add(uc);
-
-
+            
         }
-
-        public void CloseScreen()
-        {
-            MainWindowGrid.Children.Remove(uc);
-        }
-
     }
 }
