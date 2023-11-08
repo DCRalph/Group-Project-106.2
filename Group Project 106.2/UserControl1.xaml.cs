@@ -18,8 +18,14 @@ namespace Group_Project_106._2
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
+    /// 
+    public delegate void closeEvent(UserControl1 uc);
     public partial class UserControl1 : UserControl
     {
+
+        public event closeEvent Destoryed;
+
+
         public UserControl1()
         {
             InitializeComponent();
@@ -27,7 +33,8 @@ namespace Group_Project_106._2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Destoryed?.Invoke(this);
+            Console.WriteLine("button");
         }
     }
 }
