@@ -5,51 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_Project_106._2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1178" Width="424">
+        Title="MainWindow" Height="800" Width="400">
     <Grid Name="MainWindowGrid">
+        <Rectangle HorizontalAlignment="Center" Height="784" VerticalAlignment="Center" Width="400">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF003EFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions
-         >
-            <RowDefinition Height="74"/>
-        <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="43" Width="69" Click="Button_Click"/>
 
-        
-        <Button Content="Button" HorizontalAlignment="Left" Margin="553,145,0,0" VerticalAlignment="Top" Height="43" Width="69" Click="Button_Click"/>
-        <Rectangle
-               Height="39"
-               Width="339"
-                HorizontalAlignment="Left" 
-              Fill="#FFFFFF"
-            Grid.ColumnSpan="2" />
-        <TextBlock Foreground="Red"
-                       Background="white"
-                       FontSize="12"
-                      HorizontalAlignment="Stretch" TextAlignment="Center"
-                       FontFamily="Inter"><Run Text="Stay home and Stay Healthy"/></TextBlock>
-        
-        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left">
-
-
-
-            <Image Source="covid.png"
-                   Height="27"
-                   Width="42"
-                    HorizontalAlignment="Left"/>
-            <Image Source="Menu.png"
-                   Height="23.98"
-                   Width="22"
-                   HorizontalAlignment="Left"/>
-           
-
-        </StackPanel>
-        
     </Grid>
-
 </Window>
-

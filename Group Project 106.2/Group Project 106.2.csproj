@@ -101,14 +101,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="covid.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="new.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
