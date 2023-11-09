@@ -25,23 +25,32 @@ namespace Group_Project_106._2
 
     public partial class MainWindow : Window
     {
-        public UserControl1 uc = new UserControl1();
+        Loginpage login_page = new Loginpage();
+        //AccountScreen accScreen = new AccountScreen();
         public MainWindow()
         {
             InitializeComponent();
+           // MainContent.Content = homeScreen;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void closeContent()
         {
-            MainWindowGrid.Children.Add(uc);
-
-
+            if(MainContent.Content != null)
+            {
+                MainContent.Content = null;
+            }
         }
 
-        public void CloseScreen()
+        private void Home_Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindowGrid.Children.Remove(uc);
+            MainContent.Content = login_page;
+            login_page.Destoryed += closeContent;
         }
 
+        private void Account_Button_Click(object sender, RoutedEventArgs e)
+        {
+           // MainContent.Content = accScreen;
+           closeContent();
+        }
     }
 }

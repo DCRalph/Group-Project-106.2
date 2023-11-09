@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="932" d:DesignWidth="430" Background="#F1F3F5">
+             d:DesignHeight="800" d:DesignWidth="400" Background="#F1F3F5">
     <Grid>
         <Image Source="covid19.png"
                    Height="190"
@@ -31,7 +31,7 @@
                         
                                                   /></TextBlock>
 
-             
+
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
@@ -42,9 +42,9 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins"><Run Text="Email"
                                                  /></TextBlock>
-            <TextBox Height="41.31" Width="313.97" Foreground="#636364" >
+            <TextBox Height="41" Width="269" Foreground="#636364" >
                 Enter your email
-                
+
             </TextBox>
 
         </StackPanel>
@@ -58,11 +58,20 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins"><Run Text="Password"
                                                  /></TextBlock>
-            <TextBox Height="41.31" Width="313.97"  >
+            <TextBox Height="41" Width="270" RenderTransformOrigin="0.5,0.5"  >
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.215"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.496"/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
 
             </TextBox>
 
         </StackPanel>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="342,380,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
     </Grid>
 </UserControl>

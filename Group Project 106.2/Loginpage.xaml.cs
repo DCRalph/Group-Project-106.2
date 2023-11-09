@@ -18,11 +18,23 @@ namespace Group_Project_106._2
     /// <summary>
     /// Interaction logic for Loginpage.xaml
     /// </summary>
+    /// 
+
+    public delegate void closeEvent();
+
     public partial class Loginpage : UserControl
     {
+
+        public event closeEvent Destoryed;
+
         public Loginpage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
         }
     }
 }

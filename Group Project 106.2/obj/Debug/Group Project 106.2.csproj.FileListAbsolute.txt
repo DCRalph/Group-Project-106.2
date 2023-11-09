@@ -14,8 +14,6 @@ D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Deb
 D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.csproj.CoreCompileInputs.cache
 D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.exe
 D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.pdb
-D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\UserControl1.g.cs
-D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\UserControl1.baml
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\bin\Debug\Group Project 106.2.exe.config
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\bin\Debug\Group Project 106.2.exe
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\bin\Debug\Group Project 106.2.pdb
@@ -35,3 +33,5 @@ D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.exe
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.pdb
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Loginpage.g.cs
+D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\Loginpage.g.cs
+D:\Users\270318633\Documents\git\group-project-106.2\Group Project 106.2\obj\Debug\Loginpage.baml
