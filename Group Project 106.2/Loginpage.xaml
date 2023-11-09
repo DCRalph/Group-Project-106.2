@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Group_Project_106._2.Loginpage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Group_Project_106._2"
+             mc:Ignorable="d" 
+             d:DesignHeight="932" d:DesignWidth="430" Background="#F1F3F5">
+    <Grid>
+        <Image Source="covid19.png"
+                   Height="190"
+                   Width="266"
+                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,87,0,0"/>
+
+        <StackPanel
+                                   HorizontalAlignment="Center" 
+                       VerticalAlignment="Top"
+                       Margin="0,300,0,0"
+            >
+            <TextBlock Foreground="#030303"
+                       FontSize="34"
+                       TextAlignment="Center" 
+                       FontFamily="Poppins"><Run Text="Welcome"
+                        
+                                                 /></TextBlock>
+
+            <TextBlock Foreground="#636364"
+                       FontSize="14"
+                       TextAlignment="Center" 
+                       FontFamily="Poppins"><Run Text="Welcome back! Please enter your details."
+                        
+                                                  /></TextBlock>
+
+             
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" 
+                       VerticalAlignment="Top"
+                       Margin="80,450,0,0">
+
+            <TextBlock Foreground="#181818"
+                       FontSize="14"
+                       TextAlignment="Left" 
+                       FontFamily="Poppins"><Run Text="Email"
+                                                 /></TextBlock>
+            <TextBox Height="41.31" Width="313.97" Foreground="#636364" >
+                Enter your email
+                
+            </TextBox>
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" 
+                       VerticalAlignment="Top"
+                       Margin="80,530,0,0">
+
+            <TextBlock Foreground="#181818"
+                       FontSize="14"
+                       TextAlignment="Left" 
+                       FontFamily="Poppins"><Run Text="Password"
+                                                 /></TextBlock>
+            <TextBox Height="41.31" Width="313.97"  >
+
+            </TextBox>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

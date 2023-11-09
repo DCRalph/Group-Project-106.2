@@ -34,3 +34,4 @@ D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.csproj.CoreCompileInputs.cache
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.exe
 D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Group Project 106.2.pdb
+D:\Users\270294907\OneDrive - UP Education\Documents\GitHub\Group-Project-106.2\Group Project 106.2\obj\Debug\Loginpage.g.cs

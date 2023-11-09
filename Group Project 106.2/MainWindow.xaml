@@ -27,11 +27,7 @@
                 HorizontalAlignment="Left" 
               Fill="#FFFFFF"
             Grid.ColumnSpan="2" />
-        <TextBlock Foreground="Red"
-                       Background="white"
-                       FontSize="12"
-                      HorizontalAlignment="Stretch" TextAlignment="Center"
-                       FontFamily="Inter"><Run Text="Stay home and Stay Healthy"/></TextBlock>
+        
         
         <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Left">
 
@@ -45,8 +41,11 @@
                    Height="23.98"
                    Width="22"
                    HorizontalAlignment="Left"/>
-           
-
+            <TextBlock Foreground="Red"
+                       Background="white"
+                       FontSize="12"
+                    HorizontalAlignment="Stretch"  TextAlignment="Center"
+                       FontFamily="Inter"><Run Text="Stay home and Stay Healthy"/></TextBlock>
         </StackPanel>
         
     </Grid>

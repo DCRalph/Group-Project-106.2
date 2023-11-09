@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("new.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("covid19.png")]
 
 
