@@ -5,8 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="932" d:DesignWidth="430" Background="#F1F3F5">
+             d:DesignHeight="800" d:DesignWidth="400" Background="#F1F3F5">
     <Grid>
+
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
         <Image Source="covid19.png"
                    Height="190"
                    Width="266"
@@ -31,7 +34,7 @@
                         
                                                   /></TextBlock>
 
-             
+
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
@@ -42,9 +45,9 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins"><Run Text="Email"
                                                  /></TextBlock>
-            <TextBox Height="41.31" Width="313.97" Foreground="#636364" >
+            <TextBox Height="41" Width="250" Foreground="#636364" >
                 Enter your email
-                
+
             </TextBox>
 
         </StackPanel>
@@ -58,40 +61,30 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins"><Run Text="Password"
                                                  /></TextBlock>
-            <TextBox Height="41.31" Width="313.97"  >
+            <TextBox Height="41" Width="252"  />
 
-            </TextBox>
+            <Grid>
 
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Left" 
-                       VerticalAlignment="Top"
-                       Margin="70,630,0,10">
-
-            <TextBlock Foreground="#181818"
+                <TextBlock Foreground="#181818"
                        FontSize="12"
                        TextAlignment="Left" VerticalAlignment="Top"
-                       FontFamily="Poppins"><Run Text="Rember me"
-                                                 /></TextBlock>
-           
+                       FontFamily="Poppins" Margin="0,0,0,0" Text="Remember Me"/>
 
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Right" 
-                       VerticalAlignment="Top"
-                       Margin="70,630,0,10">
-
-            <TextBlock Foreground="#181818"
+                <TextBlock Foreground="#181818"
                        FontSize="12"
-                       TextAlignment="Right" VerticalAlignment="Center"
-                       FontFamily="Poppins"><Run Text="Forgot Password"/>
-                                                 </TextBlock>
+                       TextAlignment="Right"
+                       FontFamily="Poppins" Margin="0,0,0,0" Text="Forgot Password"/>
+
+
+            </Grid>
+
 
 
         </StackPanel>
 
-        <StackPanel>
-            <TextBox>
-                
-            </TextBox>
-        </StackPanel>
+
+
+
+
     </Grid>
 </UserControl>

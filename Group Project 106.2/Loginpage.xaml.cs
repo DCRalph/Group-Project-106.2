@@ -20,12 +20,13 @@ namespace Group_Project_106._2
     /// </summary>
     /// 
 
-    public delegate void closeEvent();
+    public delegate void LoginPageEvent();
 
     public partial class Loginpage : UserControl
     {
 
-        public event closeEvent Destoryed;
+        public event LoginPageEvent Destoryed;
+
 
         public Loginpage()
         {
@@ -36,5 +37,6 @@ namespace Group_Project_106._2
         {
             Destoryed?.Invoke();
         }
+
     }
 }
