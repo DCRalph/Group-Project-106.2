@@ -30,7 +30,8 @@ namespace Group_Project_106._2
         public MainWindow()
         {
             InitializeComponent();
-           // MainContent.Content = homeScreen;
+           MainContent.Content = login_page;
+           login_page.Destoryed += closeContent;
         }
 
         private void closeContent()
