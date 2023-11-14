@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Group_Project_106._2.Confirmation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Group_Project_106._2"
+             mc:Ignorable="d" 
+             d:DesignHeight="932" d:DesignWidth="430" Background="#FFFFFF">
+    <Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Image Source="Co.png" Width="314" Margin="58,99,58,466"/>
+        <StackPanel>
+            <TextBlock Foreground="#FF0000"
+                       FontSize="35"
+                       FontFamily="Inter" Text="Your Appointnment with Dr.Him scheduled for 24th August (4:00pm) has been approved" />
+        </StackPanel>
+    </Grid>
+</UserControl>
