@@ -9,7 +9,7 @@
     
     <Grid>
         <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back" Height="52" Width="56"/>
-        <Image Source="images/AP.png" Margin="59,134,59,512" Height="286" Width="312"/>
+        <Image Source="images/AP.png" Margin="59,34,40,450" Height="286" Width="312"/>
         
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
