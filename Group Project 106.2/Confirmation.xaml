@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="400" Background="#FFFFFF">
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back" Height="42" Width="46"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="BackBtn" Height="42" Width="46"/>
         <Image Source="images/Co.png" Width="314" Margin="43,72,43,437"/>
         <StackPanel Margin="0,400,0,0">
             <TextBlock Foreground="#FF0000"

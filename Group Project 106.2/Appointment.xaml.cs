@@ -36,12 +36,12 @@ namespace Group_Project_106._2
             InitializeComponent();
         }
 
-        private void Button_Click_back(object sender, RoutedEventArgs e)
+        private void BackBtn(object sender, RoutedEventArgs e)
         {
             Destoryed?.Invoke();
         }
 
-        private void Button_booked(object sender, RoutedEventArgs e)
+        private void BookedBtn(object sender, RoutedEventArgs e)
         {
             Booked?.Invoke();
         }

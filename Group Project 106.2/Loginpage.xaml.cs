@@ -32,7 +32,7 @@ namespace Group_Project_106._2
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BackBtn(object sender, RoutedEventArgs e)
         {
             Destoryed?.Invoke();
         }

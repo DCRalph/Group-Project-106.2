@@ -8,7 +8,7 @@
              d:DesignHeight="800" d:DesignWidth="400" Background="#F1F3F5">
     <Grid>
 
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click" Height="49" Width="53"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="BackBtn" Height="49" Width="53"/>
 
         <Image Source="images/covid19.png"
                    Height="190"

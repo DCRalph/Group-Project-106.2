@@ -34,7 +34,7 @@ namespace Group_Project_106._2
         }
 
 
-        private void Button_Click_back(object sender, RoutedEventArgs e)
+        private void BackBtn(object sender, RoutedEventArgs e)
         {
             Destoryed?.Invoke();
         }

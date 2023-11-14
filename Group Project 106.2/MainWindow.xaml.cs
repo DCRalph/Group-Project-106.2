@@ -15,12 +15,6 @@ using System.Windows.Shapes;
 
 namespace Group_Project_106._2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
-
-
 
 
     public partial class MainWindow : Window
@@ -48,25 +42,25 @@ namespace Group_Project_106._2
             
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Page1Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = login_page;
             login_page.Destoryed += closeContent;
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Page2Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = appointment_page;
             appointment_page.Destoryed += closeContent;
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Page3Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = qr_page;
             qr_page.Destoryed += closeContent;
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Page4Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = confirmation_page;
             confirmation_page.Destoryed += closeContent;
