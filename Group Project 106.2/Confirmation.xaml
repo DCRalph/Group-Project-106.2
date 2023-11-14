@@ -5,14 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="932" d:DesignWidth="430" Background="#FFFFFF">
+             d:DesignHeight="800" d:DesignWidth="400" Background="#FFFFFF">
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back"/>
-        <Image Source="Co.png" Width="314" Margin="58,99,58,466"/>
-        <StackPanel>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back" Height="42" Width="46"/>
+        <Image Source="images/Co.png" Width="314" Margin="43,72,43,437"/>
+        <StackPanel Margin="0,400,0,0">
             <TextBlock Foreground="#FF0000"
                        FontSize="35"
-                       FontFamily="Inter" Text="Your Appointnment with Dr.Him scheduled for 24th August (4:00pm) has been approved" />
+                       TextWrapping="Wrap"
+                       FontFamily="Inter" Text="Your Appointnment with Dr.Him scheduled for 24th August (4:00pm) has been approved" Height="240" Width="347" />
         </StackPanel>
     </Grid>
 </UserControl>

@@ -5,15 +5,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="932" d:DesignWidth="430" Background="#FFFFFF">
+             d:DesignHeight="800" d:DesignWidth="400" Background="#FFFFFF">
     
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back"/>
-        <Image Source="AP.png" Margin="59,134,59,512" Height="286" Width="312"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back" Height="52" Width="56"/>
+        <Image Source="images/AP.png" Margin="59,134,59,512" Height="286" Width="312"/>
         
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="53,466,0,0">
+                       Margin="53,350,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -24,7 +24,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="53,536,0,0">
+                       Margin="53,420,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -35,7 +35,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="53,597,0,0">
+                       Margin="53,490,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -46,7 +46,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="53,666,0,0">
+                       Margin="53,560,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -55,6 +55,6 @@
             <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your Gender" />
 
         </StackPanel>
-        <Button Width="313.97" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin=" 0,595,0,0" Content="Book a Appointment"/>
+        <Button Click="Button_booked" Width="313.97" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin=" 0,595,0,0" Content="Book a Appointment"/>
     </Grid>
 </UserControl>

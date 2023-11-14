@@ -37,6 +37,8 @@ namespace Group_Project_106._2
             InitializeComponent();
             // MainContent.Content = login_page;
             // login_page.Destoryed += closeContent;
+
+            appointment_page.Booked += Booked_Appointment;
         }
 
         private void closeContent()
@@ -68,6 +70,16 @@ namespace Group_Project_106._2
         {
             MainContent.Content = confirmation_page;
             confirmation_page.Destoryed += closeContent;
+        }
+
+
+        private void Booked_Appointment()
+        {
+            closeContent();
+
+            MainContent.Content = confirmation_page;
+            confirmation_page.Destoryed += closeContent;
+
         }
 
     }

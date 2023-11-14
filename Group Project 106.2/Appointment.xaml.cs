@@ -27,6 +27,8 @@ namespace Group_Project_106._2
     {
 
         public event appointmentPageEvent Destoryed;
+        public event appointmentPageEvent Booked;
+
 
 
         public Appointment()
@@ -37,6 +39,11 @@ namespace Group_Project_106._2
         private void Button_Click_back(object sender, RoutedEventArgs e)
         {
             Destoryed?.Invoke();
+        }
+
+        private void Button_booked(object sender, RoutedEventArgs e)
+        {
+            Booked?.Invoke();
         }
     }
 }
