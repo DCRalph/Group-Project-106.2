@@ -32,6 +32,11 @@ namespace Group_Project_106._2
             // MainContent.Content = login_page;
             // login_page.Destoryed += closeContent;
 
+            login_page.Destoryed += closeContent;
+            confirmation_page.Destoryed += closeContent;
+            qr_page.Destoryed += closeContent;
+            appointment_page.Destoryed += closeContent;
+            
             appointment_page.Booked += Booked_Appointment;
         }
 
@@ -45,35 +50,30 @@ namespace Group_Project_106._2
         private void Page1Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = login_page;
-            login_page.Destoryed += closeContent;
         }
 
         private void Page2Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = appointment_page;
-            appointment_page.Destoryed += closeContent;
         }
 
         private void Page3Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = qr_page;
-            qr_page.Destoryed += closeContent;
         }
 
         private void Page4Btn(object sender, RoutedEventArgs e)
         {
             MainContent.Content = confirmation_page;
-            confirmation_page.Destoryed += closeContent;
         }
 
 
         private void Booked_Appointment()
         {
-            closeContent();
+            //closeContent();
 
             MainContent.Content = confirmation_page;
-            confirmation_page.Destoryed += closeContent;
-
+            //confirmation_page.Destoryed += closeContent;
         }
 
     }
