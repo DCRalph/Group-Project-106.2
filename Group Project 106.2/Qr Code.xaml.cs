@@ -13,16 +13,30 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace Group_Project_106._2
 {
     /// <summary>
     /// Interaction logic for Qr_Code.xaml
     /// </summary>
+
+
+    public delegate void qrPageEvent();
+
+
     public partial class Qr_Code : UserControl
     {
+    public event qrPageEvent Destoryed;
         public Qr_Code()
         {
             InitializeComponent();
+        }
+
+
+        private void Button_Click_back(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
         }
     }
 }

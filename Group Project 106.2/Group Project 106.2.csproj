@@ -123,31 +123,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="covid.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="new.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="covid19.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="g.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="qr.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lens.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="AP.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Co.png" />
+    <Resource Include="images\AP.png" />
+    <Resource Include="images\Co.png" />
+    <Resource Include="images\covid.png" />
+    <Resource Include="images\covid19.png" />
+    <Resource Include="images\g.png" />
+    <Resource Include="images\lens.png" />
+    <Resource Include="images\Menu.png" />
+    <Resource Include="images\new.png" />
+    <Resource Include="images\qr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

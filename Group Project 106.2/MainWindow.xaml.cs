@@ -26,32 +26,49 @@ namespace Group_Project_106._2
     public partial class MainWindow : Window
     {
         Loginpage login_page = new Loginpage();
-        //AccountScreen accScreen = new AccountScreen();
+        Appointment appointment_page = new Appointment();
+        Qr_Code qr_page = new Qr_Code();
+        Confirmation confirmation_page = new Confirmation();
+
+
+
         public MainWindow()
         {
             InitializeComponent();
-           MainContent.Content = login_page;
-           login_page.Destoryed += closeContent;
+            // MainContent.Content = login_page;
+            // login_page.Destoryed += closeContent;
         }
 
         private void closeContent()
         {
             if(MainContent.Content != null)
-            {
                 MainContent.Content = null;
-            }
+            
         }
 
-        private void Home_Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MainContent.Content = login_page;
             login_page.Destoryed += closeContent;
         }
 
-        private void Account_Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-           // MainContent.Content = accScreen;
-           closeContent();
+            MainContent.Content = appointment_page;
+            appointment_page.Destoryed += closeContent;
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = qr_page;
+            qr_page.Destoryed += closeContent;
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = confirmation_page;
+            confirmation_page.Destoryed += closeContent;
+        }
+
     }
 }

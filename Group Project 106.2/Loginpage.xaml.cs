@@ -19,7 +19,6 @@ namespace Group_Project_106._2
     /// Interaction logic for Loginpage.xaml
     /// </summary>
     /// 
-
     public delegate void LoginPageEvent();
 
     public partial class Loginpage : UserControl

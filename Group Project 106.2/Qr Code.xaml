@@ -13,7 +13,7 @@
                        FontFamily="Poppins" Margin="0,43,0,-43">
             <Run Text="Scan your QR Code"
                         /></TextBlock>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click_back"/>
 
         <Image Source="qr.png" Height="416.28" Width="397.28" Margin="0,114,-7,313"></Image>
         <StackPanel Margin="-10,636,10,-636">

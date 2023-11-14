@@ -18,11 +18,21 @@ namespace Group_Project_106._2
     /// <summary>
     /// Interaction logic for Confirmation.xaml
     /// </summary>
+
+
+    public delegate void confirmPageEvent();
+
     public partial class Confirmation : UserControl
     {
+    public event confirmPageEvent Destoryed;
         public Confirmation()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_back(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
         }
     }
 }

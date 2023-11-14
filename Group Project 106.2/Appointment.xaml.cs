@@ -18,11 +18,25 @@ namespace Group_Project_106._2
     /// <summary>
     /// Interaction logic for Appointment.xaml
     /// </summary>
+    /// 
+
+
+    public delegate void appointmentPageEvent();
+
     public partial class Appointment : UserControl
     {
+
+        public event appointmentPageEvent Destoryed;
+
+
         public Appointment()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click_back(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
         }
     }
 }
