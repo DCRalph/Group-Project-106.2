@@ -55,6 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Appointment.xaml.cs">
+      <DependentUpon>Appointment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.xaml.cs">
+      <DependentUpon>Confirmation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Qr Code.xaml.cs">
+      <DependentUpon>Qr Code.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Appointment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Confirmation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Loginpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +91,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Qr Code.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -112,6 +133,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="covid19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Co.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

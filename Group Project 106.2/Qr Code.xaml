@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Group_Project_106._2.Qr_Code"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Group_Project_106._2"
+             mc:Ignorable="d" 
+             d:DesignHeight="844" d:DesignWidth="390" Background="#000000">
+    <Grid>
+        <TextBlock Foreground="#FFFFFF"
+                       FontSize="30"
+                       TextAlignment="Center" 
+                       FontFamily="Poppins" Margin="0,43,0,-43">
+            <Run Text="Scan your QR Code"
+                        /></TextBlock>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+        <Image Source="qr.png" Height="416.28" Width="397.28" Margin="0,114,-7,313"></Image>
+        <StackPanel Margin="-10,636,10,-636">
+            <Image Source="lens.png" Width="34" Height="33"/>
+            <TextBox Height="75" Width="284" Foreground="#FEF8F8" Background="#829286" Text="                                 &#xA;                         Scan QR Code"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

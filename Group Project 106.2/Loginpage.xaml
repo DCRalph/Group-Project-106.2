@@ -38,30 +38,33 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="80,450,0,0">
-
+                       Margin="53,466,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
-                       FontFamily="Poppins"><Run Text="Email"
+                       FontFamily="Poppins" ><Run Text="Email"
                                                  /></TextBlock>
-            <TextBox Height="41" Width="250" Foreground="#636364" >
-                Enter your email
-
-            </TextBox>
+            <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your email" />
 
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="80,530,0,0">
-
+                       Margin="47,546,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
-                       TextAlignment="Left" 
-                       FontFamily="Poppins"><Run Text="Password"
+                       TextAlignment= "Left" 
+                       FontFamily="Poppins" RenderTransformOrigin="0.5,0.5" Height="17" Width="314">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.484"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform><Run Text=  "Password"
                                                  /></TextBlock>
-            <TextBox Height="41" Width="252"  />
+            <TextBox Height="41.31" Width="313.97"  />
 
             <Grid>
 
@@ -78,6 +81,9 @@
 
             </Grid>
 
+            <Button Width="313.97" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin=" 0,0,0,0" Content="Log IN"/>
+            <Button Width="320" Height="42" Background="White" Foreground="#000000" FontSize="14" Margin=" 0,20,0,0" Content="Sign in With Google"/>
+            <Image Source="g.png" Height="29" Width="28" RenderTransformOrigin="-2.439,-0.606"/>
 
 
         </StackPanel>
