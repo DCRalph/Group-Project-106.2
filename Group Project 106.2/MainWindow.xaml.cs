@@ -13,8 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+using System.Data.SQLite;
+using System.Data;
+using Dapper;
+using System.IO;
+
+
+ 
+
 namespace Group_Project_106._2
 {
+
+    class User
+    {
+        public String username;
+        public String password;
+    }
 
 
     public partial class MainWindow : Window
@@ -26,10 +41,13 @@ namespace Group_Project_106._2
 
 
 
+        static string databaseFileName = "db.sqlite";
+        static string source = $"Data Source={System.IO.Path.Combine(Directory.GetCurrentDirectory(), databaseFileName)}";
+
         public MainWindow()
         {
             InitializeComponent();
-            // MainContent.Content = login_page;
+             MainContent.Content = login_page;
             // login_page.Destoryed += closeContent;
 
             login_page.Destoryed += closeContent;
@@ -38,13 +56,30 @@ namespace Group_Project_106._2
             appointment_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
+
+            dbTest();
+        }
+
+
+        private void dbTest()
+        {
+            using (IDbConnection connection = new SQLiteConnection(source))
+            {
+                connection.Open();
+                //var output = connection.Query<Book>("select * from Books", new DynamicParameters());
+                var x = connection.Query<User>("select * from Users");
+                var y = x.ToList();
+
+                int stop = 0;
+
+                //return output.ToList();
+            }
         }
 
         private void closeContent()
         {
             if(MainContent.Content != null)
                 MainContent.Content = null;
-            
         }
 
         private void Page1Btn(object sender, RoutedEventArgs e)
@@ -70,10 +105,7 @@ namespace Group_Project_106._2
 
         private void Booked_Appointment()
         {
-            //closeContent();
-
             MainContent.Content = confirmation_page;
-            //confirmation_page.Destoryed += closeContent;
         }
 
     }
