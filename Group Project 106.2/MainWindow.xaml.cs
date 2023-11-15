@@ -57,24 +57,24 @@ namespace Group_Project_106._2
             
             appointment_page.Booked += Booked_Appointment;
 
-            dbTest();
+            //dbTest();
         }
 
 
-        private void dbTest()
-        {
-            using (IDbConnection connection = new SQLiteConnection(source))
-            {
-                connection.Open();
+        //private void dbTest()
+       // {
+       //    using (IDbConnection connection = new SQLiteConnection(source))
+           // {
+               // connection.Open();
                 //var output = connection.Query<Book>("select * from Books", new DynamicParameters());
-                var x = connection.Query<User>("select * from Users");
-                var y = x.ToList();
+               // var x = connection.Query<User>("select * from Users");
+                //var y = x.ToList();
 
-                int stop = 0;
+                //int stop = 0;
 
                 //return output.ToList();
-            }
-        }
+            //}
+        //}
 
         private void closeContent()
         {

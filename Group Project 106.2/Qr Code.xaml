@@ -17,7 +17,7 @@
 
         <Image Source="images/qr.png" Height="416.28" Width="397.28" Margin="0,114,-7,313"></Image>
         <StackPanel Margin="-10,636,10,-636">
-            <Image Source="lens.png" Width="34" Height="33"/>
+            <Image Source="images/lens.png" Width="34" Height="33"/>
             <TextBox Height="75" Width="284" Foreground="#FEF8F8" Background="#829286" Text="                                 &#xA;                         Scan QR Code"/>
         </StackPanel>
     </Grid>
