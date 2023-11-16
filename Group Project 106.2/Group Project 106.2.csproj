@@ -83,6 +83,7 @@
     <Compile Include="Confirmation.xaml.cs">
       <DependentUpon>Confirmation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="globals.cs" />
     <Compile Include="Qr Code.xaml.cs">
       <DependentUpon>Qr Code.xaml</DependentUpon>
     </Compile>
@@ -136,6 +137,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Content Include="db.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

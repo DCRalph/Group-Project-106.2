@@ -14,10 +14,13 @@
         <Button Click="Page3Btn" VerticalAlignment="Top" Margin="0,150,150,0" Height="20" Width="120">Page 3</Button>
         <Button Click="Page4Btn" VerticalAlignment="Top" Margin="150,150,0,0" Height="20" Width="120">Page 4</Button>
 
+        <TextBlock Name="userState" HorizontalAlignment="Center" Margin="0,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="163"/>
+
+            <Button Content="Logout" Name="logoutBtn" HorizontalAlignment="Left" Margin="122,56,0,0" VerticalAlignment="Top" Click="LogoutBtn" Width="62"/>
 
 
-
-        <ContentControl Name="MainContent" Height="800" />
+        <ContentControl Name="MainContent" Height="800" >
+        </ContentControl>
 
     </Grid>
 

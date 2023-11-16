@@ -25,12 +25,6 @@ using System.IO;
 namespace Group_Project_106._2
 {
 
-    class User
-    {
-        public String username;
-        public String password;
-    }
-
 
     public partial class MainWindow : Window
     {
@@ -38,6 +32,8 @@ namespace Group_Project_106._2
         Appointment appointment_page = new Appointment();
         Qr_Code qr_page = new Qr_Code();
         Confirmation confirmation_page = new Confirmation();
+
+        
 
 
 
@@ -56,6 +52,8 @@ namespace Group_Project_106._2
             appointment_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
+
+            userState.Text = "Loged Out";
 
             //dbTest();
         }
@@ -80,6 +78,27 @@ namespace Group_Project_106._2
         {
             if(MainContent.Content != null)
                 MainContent.Content = null;
+
+            if(globals.globalUser == null)
+            {
+                userState.Text = "Loged Out";
+                logoutBtn.Visibility = Visibility.Hidden;
+            } else
+            {
+                userState.Text = "Loged In as " + globals.globalUser.username;
+                logoutBtn.Visibility = Visibility.Visible;
+
+            }
+        }
+
+        private void LogoutBtn(object sender, RoutedEventArgs e)
+        {
+            globals.globalUser = null;
+
+
+            userState.Text = "Loged Out";
+            logoutBtn.Visibility = Visibility.Hidden;
+
         }
 
         private void Page1Btn(object sender, RoutedEventArgs e)
@@ -108,5 +127,6 @@ namespace Group_Project_106._2
             MainContent.Content = confirmation_page;
         }
 
+    
     }
 }
