@@ -6,11 +6,11 @@
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="400" Background="#FFFFFF">
-    
+
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="BackBtn" Height="52" Width="56"/>
-        <Image Source="images/AP.png" Margin="94,76,33,466"/>
-        
+        <Button Content="Back" HorizontalAlignment="Left" Margin="16,24,0,0" VerticalAlignment="Top" Click="BackBtn" Height="52" Width="56"/>
+        <Image Source="images/AP.png" Margin="74,80,54,462"/>
+
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
                        Margin="53,350,0,0">
@@ -19,7 +19,7 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins" ><Run Text="Email"
                                                  /></TextBlock>
-            <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your email" />
+            <TextBox Height="41" Width="314" Foreground="#636364" x:Name="appoitmentEmail" />
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
@@ -30,7 +30,7 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins" ><Run Text="Name"
                                                  /></TextBlock>
-            <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your Name" />
+            <TextBox Height="41" Width="314" Foreground="#636364" Name="appoitmentName" />
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
@@ -41,7 +41,7 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins" ><Run Text="Phone no."
                                                  /></TextBlock>
-            <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your contact no." />
+            <TextBox Height="41" Width="314" Foreground="#636364" Name="appoitmentPhone" />
 
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
@@ -52,9 +52,10 @@
                        TextAlignment="Left" 
                        FontFamily="Poppins" ><Run Text="Gender"
                                                  /></TextBlock>
-            <TextBox Height="41" Width="314" Foreground="#636364" Text="Enter your Gender" />
+            <TextBox Height="41" Width="314" Foreground="#636364" Name="appoitmentGender" />
 
         </StackPanel>
-        <Button Click="BookedBtn" Width="313.97" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin=" 0,595,0,0" Content="Book a Appointment"/>
+        <TextBlock Name="appoitmentErrorBox" Foreground="red" HorizontalAlignment="Left" Margin="53,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="68"/>
+        <Button Click="BookedBtn" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin="43,705,33,54" Content="Book a Appointment"/>
     </Grid>
 </UserControl>

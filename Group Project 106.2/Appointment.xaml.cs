@@ -43,7 +43,47 @@ namespace Group_Project_106._2
 
         private void BookedBtn(object sender, RoutedEventArgs e)
         {
-            Booked?.Invoke();
+            String appoitmentEmailStr = appoitmentEmail.Text;
+            String appoitmentNameStr = appoitmentName.Text;
+            String appoitmentPhoneStr = appoitmentPhone.Text;
+            String appoitmentGenderStr = appoitmentGender.Text;
+
+
+            List<string> errors = new List<string>();
+
+            if (appoitmentEmailStr == null || appoitmentEmailStr == "")
+            {
+                errors.Add("Please enter a email");
+            }
+
+            if(appoitmentNameStr == null || appoitmentNameStr == "")
+            {
+                errors.Add("Please enter your name");
+            }
+
+            if (appoitmentPhoneStr == null || appoitmentPhoneStr == "")
+            {
+                errors.Add("Please enter your phone number");
+            }
+
+            if (appoitmentGenderStr == null || appoitmentGenderStr == "")
+            {
+                errors.Add("Please enter your gender");
+            }
+
+            appoitmentErrorBox.Text = "";
+
+            foreach (String error in errors)
+            {
+                appoitmentErrorBox.Text += error + ".\n";
+            }
+
+            if(errors.Count == 0) {
+                Booked?.Invoke();
+            }
+
+
         }
+
     }
 }

@@ -15,5 +15,7 @@
                        TextWrapping="Wrap"
                        FontFamily="Inter" Text="Your Appointnment with Dr.Him scheduled for 24th August (4:00pm) has been approved" Height="240" Width="347" />
         </StackPanel>
+
+        <Button Click="goHomeBtn" Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin="38,703,38,55" Content="Return Home"/>
     </Grid>
 </UserControl>

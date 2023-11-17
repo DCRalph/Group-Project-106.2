@@ -44,7 +44,6 @@ namespace Group_Project_106._2
         {
             InitializeComponent();
              MainContent.Content = login_page;
-            // login_page.Destoryed += closeContent;
 
             login_page.Destoryed += closeContent;
             confirmation_page.Destoryed += closeContent;

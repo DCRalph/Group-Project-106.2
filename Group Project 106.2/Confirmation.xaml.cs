@@ -34,5 +34,10 @@ namespace Group_Project_106._2
         {
             Destoryed?.Invoke();
         }
+
+        private void goHomeBtn(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
+        }
     }
 }
