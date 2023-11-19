@@ -32,6 +32,7 @@ namespace Group_Project_106._2
         Appointment appointment_page = new Appointment();
         Qr_Code qr_page = new Qr_Code();
         Confirmation confirmation_page = new Confirmation();
+        Symptoms symptoms_page = new Symptoms();
 
         
 
@@ -49,6 +50,7 @@ namespace Group_Project_106._2
             confirmation_page.Destoryed += closeContent;
             qr_page.Destoryed += closeContent;
             appointment_page.Destoryed += closeContent;
+            symptoms_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
 
@@ -119,12 +121,17 @@ namespace Group_Project_106._2
         {
             MainContent.Content = confirmation_page;
         }
+        private void Page5Btn(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = symptoms_page;
+        }
 
 
         private void Booked_Appointment()
         {
             MainContent.Content = confirmation_page;
         }
+
 
     
     }

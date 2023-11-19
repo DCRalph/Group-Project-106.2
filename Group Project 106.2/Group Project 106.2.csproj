@@ -87,8 +87,8 @@
     <Compile Include="Qr Code.xaml.cs">
       <DependentUpon>Qr Code.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Symptoms.xaml.cs">
+      <DependentUpon>Symptoms.xaml</DependentUpon>
     </Compile>
     <Page Include="Appointment.xaml">
       <SubType>Designer</SubType>
@@ -121,7 +121,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl1.xaml">
+    <Page Include="Symptoms.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

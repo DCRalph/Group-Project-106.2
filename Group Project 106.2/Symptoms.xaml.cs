@@ -16,13 +16,27 @@ using System.Windows.Shapes;
 namespace Group_Project_106._2
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for Symptoms.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    /// 
+
+    public delegate void symptomsPageEvent();
+
+    public partial class Symptoms : UserControl
     {
-        public UserControl1()
+
+        public event symptomsPageEvent Destoryed;
+
+        public Symptoms()
         {
             InitializeComponent();
+
         }
+
+        private void BackBtn(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
+        }
+        
     }
 }
