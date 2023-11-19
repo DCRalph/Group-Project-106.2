@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +31,11 @@ namespace Group_Project_106._2
     static class globals
     {
         public static User globalUser = null;
+
+        public static string databaseFileName = "db.sqlite";
+        public static string source = $"Data Source={System.IO.Path.Combine(Directory.GetCurrentDirectory(), databaseFileName)}";
+
+
     }
 
 }

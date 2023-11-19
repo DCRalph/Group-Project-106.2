@@ -37,9 +37,6 @@ namespace Group_Project_106._2
 
         public event LoginPageEvent Destoryed;
 
-        static string databaseFileName = "db.sqlite";
-        static string source = $"Data Source={System.IO.Path.Combine(Directory.GetCurrentDirectory(), databaseFileName)}";
-
 
 
         public Loginpage()
@@ -61,7 +58,7 @@ namespace Group_Project_106._2
             user.password = password.Text;
 
 
-            using (IDbConnection connection = new SQLiteConnection(source))
+            using (IDbConnection connection = new SQLiteConnection(globals.source))
             {
                 connection.Open();
                 var x = connection.Query<User>("select * from Users");

@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Group_Project_106._2
 {
@@ -78,10 +83,21 @@ namespace Group_Project_106._2
                 appoitmentErrorBox.Text += error + ".\n";
             }
 
-            if(errors.Count == 0) {
-                Booked?.Invoke();
-            }
+            if (errors.Count == 0) {  
+                using (IDbConnection connection = new SQLiteConnection(globals.source))
+                {
+                var data = new { name = appoitmentNameStr, email = appoitmentEmailStr, phone = appoitmentPhoneStr, gender = appoitmentGenderStr };
+                    connection.Open();
+                    string queryString = "INSERT INTO Appointments ('User Name', 'User Email', 'User Phone', 'User Gender') VALUES ( @name , @email , @phone , @gender )";
 
+                    var x = connection.Execute(queryString, data);
+
+                }
+
+
+                Booked?.Invoke();
+
+            }
 
         }
 
