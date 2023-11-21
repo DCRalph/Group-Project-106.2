@@ -56,7 +56,7 @@ namespace Group_Project_106._2
 
             userState.Text = "Loged Out";
 
-            //dbTest();
+            test();
         }
 
 
@@ -133,6 +133,24 @@ namespace Group_Project_106._2
         }
 
 
-    
+
+        public void test()
+        {
+            string username = "test";
+            string password = "12345";
+
+            using (IDbConnection connection = new SQLiteConnection(globals.source))
+            {
+                connection.Open();
+                string queryString = "select * from Users Where username = '" + username + "' and password = '" + password + "'";
+                var x = connection.Query(queryString);
+                if(x.Count() > 1)
+                {
+                    
+                }
+                var y = 0;
+            }
+        }
+        //-------------------
     }
 }
