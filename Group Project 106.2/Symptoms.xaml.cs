@@ -33,14 +33,10 @@ namespace Group_Project_106._2
 
         }
 
-        private void BackBtn(object sender, RoutedEventArgs e)
+        private void homeBtn(object sender, RoutedEventArgs e)
         {
             Destoryed?.Invoke();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

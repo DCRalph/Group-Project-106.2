@@ -5,24 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="1465" d:DesignWidth="428" Background="#FFFFFF">
+             d:DesignHeight="1465" d:DesignWidth="400" Background="#FFFFFF">
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
 
         <ScrollViewer>
         <StackPanel Margin="19,0,0,50">
-            <TextBlock Foreground="#000000"
+                <TextBlock Foreground="#000000"
                        FontSize="35"
                        FontFamily="Inter"
-                       FontWeight="Bold" Text="Know the Symptoms of Covid _19" TextWrapping="Wrap" Margin="10,60,10,20"/>
-            <Image Source="images/s.png" Height="622" Width="326"/>
+                       FontWeight="Bold"  TextWrapping="Wrap" Margin="10,60,10,20">
+                        
+                    Know the Symptoms of <TextBlock Foreground="#ff0000" >Covid _19</TextBlock>
+                    
+                </TextBlock>
+                <Image Source="images/s.png" Height="622" Width="326"/>
                 <TextBlock Foreground="#000000"
                        FontSize="15"
                        FontFamily="Inter"
                        FontWeight="Bold" Text="How can we safe our self"  Height="23" TextAlignment="Center"/>
                 <Image Source="images/ss.png" Height="524" Width="309"/>
-                <Button Height="54" Width="46" Foreground="#FFFFFF" Click="Button_Click">
+                <Button Height="54" Width="46" Foreground="#FFFFFF" Click="homeBtn">
                     <Image Source="images/hhome.png" Height="50" Width="55"  /> 
             </Button>
 
