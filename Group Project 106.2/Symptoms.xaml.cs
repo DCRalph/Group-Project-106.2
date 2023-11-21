@@ -37,6 +37,10 @@ namespace Group_Project_106._2
         {
             Destoryed?.Invoke();
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

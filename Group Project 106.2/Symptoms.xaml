@@ -5,30 +5,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="400" Background="#FFFFFF">
+             d:DesignHeight="1465" d:DesignWidth="428" Background="#FFFFFF">
     <Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="BackBtn"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
 
-        <StackPanel RenderTransformOrigin="0.5,0.5" Margin="19,0,0,120">
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.137"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
+        <ScrollViewer>
+        <StackPanel Margin="19,0,0,50">
             <TextBlock Foreground="#000000"
                        FontSize="35"
                        FontFamily="Inter"
-                       FontWeight="Bold" Text="Know the Symptoms of Covid _19" Margin="60,60,0,0" TextWrapping="Wrap"/>
-            <Image Source="images/s.png" Height="524" Width="309"/>
-            <TextBlock Foreground="#000000"
+                       FontWeight="Bold" Text="Know the Symptoms of Covid _19" TextWrapping="Wrap" Margin="10,60,10,20"/>
+            <Image Source="images/s.png" Height="622" Width="326"/>
+                <TextBlock Foreground="#000000"
                        FontSize="15"
                        FontFamily="Inter"
                        FontWeight="Bold" Text="How can we safe our self"  Height="23" TextAlignment="Center"/>
-            <Image Source="images/ss.png" Height="524" Width="309"/>
+                <Image Source="images/ss.png" Height="524" Width="309"/>
+                <Button Height="54" Width="46" Foreground="#FFFFFF" Click="Button_Click">
+                    <Image Source="images/hhome.png" Height="50" Width="55"  /> 
+            </Button>
+
+
         </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>

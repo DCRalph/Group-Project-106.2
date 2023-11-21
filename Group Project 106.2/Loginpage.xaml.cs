@@ -61,7 +61,7 @@ namespace Group_Project_106._2
             using (IDbConnection connection = new SQLiteConnection(globals.source))
             {
                 connection.Open();
-                var x = connection.Query<User>("select * from Users");
+                var x = connection.Query<User>("select * from Users WHERE username = mandeep");
                 var y = x.ToList();
 
                 bool loginSuccess = false;
