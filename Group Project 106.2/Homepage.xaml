@@ -86,6 +86,52 @@
             <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="2">100000</TextBlock>
             <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
 
+            <TextBlock FontWeight="Bold" Grid.Row="7" Grid.Column="0">7</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="7" Grid.Column="1">Canterbury</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="7" Grid.Column="2">1500</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="7" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
+
+            <TextBlock FontWeight="Bold" Grid.Row="8" Grid.Column="0">8</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="8" Grid.Column="1">Nelson</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="8" Grid.Column="2">600</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="8" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="9" Grid.Column="0">9</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="9" Grid.Column="1">Napier</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="9" Grid.Column="2">20</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="9" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="10" Grid.Column="0">10</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="10" Grid.Column="1">Queenstown</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="10" Grid.Column="2">1000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="10" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="11" Grid.Column="0">11</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="11" Grid.Column="1">Lower hutt</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="11" Grid.Column="2">1000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="11" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="12" Grid.Column="0">12</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="12" Grid.Column="1">Timaru</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="12" Grid.Column="2">1200</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="12" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="13" Grid.Column="0">13</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="13" Grid.Column="1">Palmeston North</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="13" Grid.Column="2">200</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="13" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="14" Grid.Column="0">14</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="14" Grid.Column="1">Hastings</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="14" Grid.Column="2">5000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="14" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="15" Grid.Column="0">15</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="15" Grid.Column="1">Poriua</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="15" Grid.Column="2">120</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="15" Grid.Column="3" Foreground="#6B9467" Text="Safe"/>
+
         </Grid>
 
 
