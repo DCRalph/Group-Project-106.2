@@ -37,6 +37,7 @@ namespace Group_Project_106._2
 
         public event LoginPageEvent Destoryed;
         public event LoginPageEvent logedIn;
+        public event LoginPageEvent logedInAdmin;
 
 
 
@@ -79,7 +80,15 @@ namespace Group_Project_106._2
                         loginStatusText.Text = "";
 
                         //Destoryed?.Invoke();
-                        logedIn?.Invoke();
+                        //logedIn?.Invoke();
+
+                        if (item.isAdmin == 1)
+                        {
+                            logedInAdmin?.Invoke();
+                        } else
+                        {
+                            logedIn?.Invoke();
+                        }
 
                         break;
                     }

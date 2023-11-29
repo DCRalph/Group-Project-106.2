@@ -11,6 +11,11 @@
         <TextBlock HorizontalAlignment="Left" FontFamily="Inter" FontSize="12" Foreground="#ff0000" Margin="148,23,0,758">Stay at home and Stay healthy</TextBlock>
 
 
+        <Button Click="backBtn" VerticalAlignment="Top" Margin="319,10,10,0" Height="28" Content="back"/>
+        <Button Click="logout" VerticalAlignment="Top" Margin="319,43,10,0" Height="28" Content="Logout"/>
+
+
+
         <Button Click="Home_page_appointment" VerticalAlignment="Top" Margin="14,103,266,0" Height="20"  Width="120">Appointment</Button>
         <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,135,266,0" Height="20" Width="120">Qr code</Button>
         <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="14,169,266,0" Height="20" Width="120">Symptoms</Button>
@@ -18,7 +23,7 @@
 
         <Image Source="images/covid.png" Margin="10,8,257,706"/>
 
-        <Image Source="images/new.png" Margin="183,62,49,606"></Image>
+        <Image Source="images/new.png" Margin="151,74,81,594"></Image>
 
         <TextBlock FontFamily="Inter" Margin="10,214,10,560" FontSize="15" TextAlignment="Center" FontWeight="Bold">New Covid-19 Cases List</TextBlock>
 
@@ -91,7 +96,6 @@
 
 
 
-        <Button Click="backBtn" VerticalAlignment="Top" Margin="321,15,8,0" Height="28" Content="back"/>
 
     </Grid>
 </UserControl>

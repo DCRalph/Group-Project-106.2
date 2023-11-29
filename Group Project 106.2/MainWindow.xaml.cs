@@ -29,6 +29,8 @@ namespace Group_Project_106._2
     public partial class MainWindow : Window
     {
         Homepage homepage = new Homepage();
+        adminPage adminPage = new adminPage();
+
         Loginpage login_page = new Loginpage();
         Appointment appointment_page = new Appointment();
         Qr_Code qr_page = new Qr_Code();
@@ -56,12 +58,25 @@ namespace Group_Project_106._2
             
             appointment_page.Booked += Booked_Appointment;
 
+
+            login_page.logedIn += delegate () { MainContent.Content = homepage; };
+            login_page.logedInAdmin += delegate () { MainContent.Content = adminPage; };
+
+            homepage.Logout += delegate () {
+                logout();
+                MainContent.Content = login_page;
+            };
+
+            adminPage.Logout += delegate () {
+                logout();
+                MainContent.Content = login_page;
+            };
+
             homepage._appointment += delegate () { MainContent.Content = appointment_page; };
             homepage._qr += delegate () { MainContent.Content = qr_page; };
             homepage._confermation += delegate () { MainContent.Content = confirmation_page; };
             homepage._symptons += delegate () { MainContent.Content = symptoms_page; };
 
-            login_page.logedIn += delegate () { MainContent.Content = homepage; };
 
             appointment_page.Destoryed += delegate () { MainContent.Content = homepage; };
             qr_page.Destoryed += delegate () { MainContent.Content = homepage; };
@@ -107,12 +122,16 @@ namespace Group_Project_106._2
 
         private void LogoutBtn(object sender, RoutedEventArgs e)
         {
+            logout();
+        }
+
+        private void logout()
+        {
             globals.globalUser = null;
 
 
             userState.Text = "Loged Out";
             logoutBtn.Visibility = Visibility.Hidden;
-
         }
 
         private void HomeBtn(object sender, RoutedEventArgs e)
@@ -150,7 +169,10 @@ namespace Group_Project_106._2
             MainContent.Content = confirmation_page;
         }
 
+        private void adminBtn(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = adminPage;
 
-    
+        }
     }
 }

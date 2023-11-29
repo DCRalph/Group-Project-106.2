@@ -11,6 +11,7 @@ namespace Group_Project_106._2
         {
             public  String username;
             public  String password;
+        public int isAdmin;
 
 
         public Boolean match(User other)

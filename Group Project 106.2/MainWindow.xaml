@@ -13,7 +13,6 @@
 
         <Button Content="Logout" Name="logoutBtn" HorizontalAlignment="Left" Margin="118,56,0,0" VerticalAlignment="Top" Click="LogoutBtn" Width="62" Height="20"/>
 
-        <Button Click="HomeBtn" VerticalAlignment="Top" Margin="215,201,65,0" Height="20">Home</Button>
 
 
         <Button Click="Page1Btn" VerticalAlignment="Top" Margin="65,100,215,0" Height="20">Page 1</Button>
@@ -23,9 +22,11 @@
         <Button Click="Page4Btn" VerticalAlignment="Top" Margin="215,150,65,0" Height="20">Page 4</Button>
 
         <Button Click="Page5Btn" VerticalAlignment="Top" Margin="65,201,215,0" Height="20">Page 5</Button>
+        <Button Click="HomeBtn" VerticalAlignment="Top" Margin="215,201,65,0" Height="20">Home</Button>
 
+        <Button Click="adminBtn" VerticalAlignment="Top" Margin="65,236,215,0" Height="20">Admin</Button>
+        
         <ContentControl Name="MainContent" Height="800" Width="400" />
-
 
     </Grid>
 

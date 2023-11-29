@@ -29,6 +29,8 @@ namespace Group_Project_106._2
     {
 
         public event confirmPageEvent Destoryed;
+        public event confirmPageEvent Logout;
+
         public event confirmPageEvent _appointment;
         public event confirmPageEvent _qr;
         public event confirmPageEvent _confermation;
@@ -65,6 +67,9 @@ namespace Group_Project_106._2
             _symptons?.Invoke();
         }
 
-
+        private void logout(object sender, RoutedEventArgs e)
+        {
+            Logout?.Invoke();
+        }
     }
 }
