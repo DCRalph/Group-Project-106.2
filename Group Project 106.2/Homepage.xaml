@@ -1,74 +1,72 @@
-﻿<Window x:Class="Group_Project_106._2.Homepage"
+﻿<UserControl x:Class="Group_Project_106._2.Homepage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_Project_106._2"
         mc:Ignorable="d"
-        Title="Homepage" Height="800" Width="400">
+        Height="800" Width="400" Background="#FFFFFF">
     <Grid>
 
-        <TextBlock HorizontalAlignment="Center" FontFamily="Inter" FontSize="12" Foreground="#ff0000" Margin="135,10,97,-10">Stay at home and Stay healthy</TextBlock>
-        <TextBlock Name="userState" HorizontalAlignment="Center" Margin="114,35,114,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164"/>
+        <TextBlock HorizontalAlignment="Left" FontFamily="Inter" FontSize="12" Foreground="#ff0000" Margin="139,10,0,771">Stay at home and Stay healthy</TextBlock>
+        <TextBlock Name="userState" HorizontalAlignment="Left" Margin="144,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164"/>
 
 
-        <Button Click="Page2Btn" VerticalAlignment="Top" Margin="10,81,262,0" Height="20"  Width="120">Appointment</Button>
-        <Button Click="Page3Btn" VerticalAlignment="Top" Margin="10,115,262,0" Height="20" Width="120">Qr code</Button>
-        <Button Click="Page4Btn" VerticalAlignment="Top" Margin="10,151,262,0" Height="20" Width="120">Confirmation</Button>
-        <Button Click="Page5Btn" VerticalAlignment="Top" Margin="10,194,262,0" Height="20" Width="120">Symptoms</Button>
+        <Button Click="Home_page_appointment" VerticalAlignment="Top" Margin="14,98,266,0" Height="20"  Width="120">Appointment</Button>
+        <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,130,266,0" Height="20" Width="120">Qr code</Button>
+        <Button Click="Home_page_confermation" VerticalAlignment="Top" Margin="14,162,266,0" Height="20" Width="120">Confirmation</Button>
+        <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="10,194,262,0" Height="20" Width="120">Symptoms</Button>
 
-        <Image Source="images/covid.png" Margin="5,10,262,704"/>
+        <Image Source="images/covid.png" Margin="1,-2,266,716"/>
 
-        <Image Source="images/new.png" Margin="135,70,97,598"></Image>
+        <Image Source="images/new.png" Margin="158,74,74,594"></Image>
 
-        <TextBlock FontFamily="Inter" Margin="144,209,21,36" FontSize="15" FontWeight="Bold">New Covid-19 Cases List</TextBlock>
+        <TextBlock FontFamily="Inter" Margin="144,209,59,565" FontSize="15" FontWeight="Bold">New Covid-19 Cases List</TextBlock>
 
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="10,260,30,-10" FontSize="15">NO.</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="84,260,41,-30" FontSize="15">City</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="197,260,-72,-30" FontSize="15">Cases</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="323,260,-198,-30" FontSize="15">Alerts</TextBlock>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,297,230,-207">1</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,297,172,-207">Wellington</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,297,41,-207">1000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,297,-83,-207" Foreground="#6B9467">Safe</TextBlock>
+        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="10,260,326,522" FontSize="15">NO.</TextBlock>
+        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="84,260,235,522" FontSize="15">City</TextBlock>
+        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="197,260,138,522" FontSize="15">Cases</TextBlock>
+        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="323,260,21,524" FontSize="15">Alerts</TextBlock>
 
 
-
-        <TextBlock FontWeight="Bold" Margin="10,329,230,-239">2</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,329,172,-239">Auckland</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,329,41,-239">1000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,329,-83,-239" Foreground="Red" Text="Dangerous"/>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,368,230,-278">3</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,368,172,-278">Christchurch</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,368,41,-278">100</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,449,-83,-359" Foreground="#6B9467">Safe</TextBlock>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,412,230,-322">4</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,412,230,-447">Tauranga</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,412,41,-322">10000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,412,-83,-322" Foreground="Red">Dangerous</TextBlock>
-
-        <TextBlock FontWeight="Bold" Margin="10,447,230,-357">5</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="62,449,253,290">Dunedin</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,447,41,-357">500</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,368,-83,-278" Foreground="#6B9467">Safe</TextBlock>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,476,230,-365">6</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="62,476,201,-365">Hamilton</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="197,474,157,-365">15000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="312,476,-72,-473" Foreground="Red">Dangerous</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="10,297,361,476">1</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="68,297,266,476">Wellington</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="199,297,138,476">1000</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,297,10,476" Foreground="#6B9467">Safe</TextBlock>
 
 
 
+        <TextBlock FontWeight="Bold" Margin="10,329,376,454">2</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="68,329,266,437">Auckland</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="199,329,157,454">1000</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,329,10,454" Foreground="Red" Text="Dangerous"/>
 
-        <ContentControl Name="MainContent" Height="800" Margin="47,-1,-47,-30" ></ContentControl>
+
+        <TextBlock FontWeight="Bold" Margin="10,368,376,400">3</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="68,368,235,409" RenderTransformOrigin="0.399,0.493">Christchurch</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="199,368,157,416">100</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,449,10,324" Foreground="#6B9467">Safe</TextBlock>
+
+
+        <TextBlock FontWeight="Bold" Margin="10,412,376,356">4</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="60,412,238,358">Tauranga</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="199,412,152,358">10000</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,412,10,372" Foreground="Red">Dangerous</TextBlock>
+
+        <TextBlock FontWeight="Bold" Margin="10,447,376,329">5</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="62,449,252,329">Dunedin</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="199,447,157,329">500</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,368,8,416" Foreground="#6B9467">Safe</TextBlock>
+
+
+        <TextBlock FontWeight="Bold" Margin="10,476,376,307">6</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="62,476,241,290">Hamilton</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="197,474,157,307">15000</TextBlock>
+        <TextBlock FontWeight="Bold" Margin="323,476,-1,307" Foreground="Red">Dangerous</TextBlock>
+
+
+        <Button Click="backBtn" VerticalAlignment="Top" Margin="321,15,8,0" Height="28" Content="back"/>
 
     </Grid>
-</Window>
+</UserControl>
     

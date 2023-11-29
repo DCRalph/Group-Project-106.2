@@ -21,25 +21,50 @@ namespace Group_Project_106._2
     /// <summary>
     /// Interaction logic for Homepage.xaml
     /// </summary>
-    public partial class Homepage : Window
-    {
-        Loginpage login_page = new Loginpage();
-        Appointment appointment_page = new Appointment();
-        Qr_Code qr_page = new Qr_Code();
-        Confirmation confirmation_page = new Confirmation();
-        Symptoms symptoms_page = new Symptoms();
-     
+    /// 
 
-        static string databaseFileName = "db.sqlite";
-        static string source = $"Data Source={System.IO.Path.Combine(Directory.GetCurrentDirectory(), databaseFileName)}";
+    public delegate void homePageEvent();
+
+    public partial class Homepage : UserControl
+    {
+
+        public event confirmPageEvent Destoryed;
+        public event confirmPageEvent _appointment;
+        public event confirmPageEvent _qr;
+        public event confirmPageEvent _confermation;
+        public event confirmPageEvent _symptons;
+
         public Homepage()
         {
             InitializeComponent();
                
         }
 
+        private void backBtn(object sender, RoutedEventArgs e)
+        {
+            Destoryed?.Invoke();
+        }
+
+        private void Home_page_appointment(object sender, RoutedEventArgs e)
+        {
+            _appointment?.Invoke();
+        }
+
+        private void Home_page_qr(object sender, RoutedEventArgs e)
+        {
+            _qr?.Invoke();
+        }
+
+        private void Home_page_confermation(object sender, RoutedEventArgs e)
+        {
+            _confermation?.Invoke();
+        }
+
+        private void Home_page_symptons(object sender, RoutedEventArgs e)
+        {
+            _symptons?.Invoke();
+        }
 
 
-       
     }
 }

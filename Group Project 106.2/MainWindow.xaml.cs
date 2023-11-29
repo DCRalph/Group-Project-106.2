@@ -28,6 +28,7 @@ namespace Group_Project_106._2
 
     public partial class MainWindow : Window
     {
+        Homepage homepage = new Homepage();
         Loginpage login_page = new Loginpage();
         Appointment appointment_page = new Appointment();
         Qr_Code qr_page = new Qr_Code();
@@ -46,6 +47,7 @@ namespace Group_Project_106._2
             InitializeComponent();
              MainContent.Content = login_page;
 
+            homepage.Destoryed += closeContent;
             login_page.Destoryed += closeContent;
             confirmation_page.Destoryed += closeContent;
             qr_page.Destoryed += closeContent;
@@ -53,6 +55,11 @@ namespace Group_Project_106._2
             symptoms_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
+
+            homepage._appointment += delegate () { MainContent.Content = appointment_page; };
+            homepage._qr += delegate () { MainContent.Content = qr_page; };
+            homepage._confermation += delegate () { MainContent.Content = confirmation_page; };
+            homepage._symptons += delegate () { MainContent.Content = symptoms_page; };
 
             userState.Text = "Loged Out";
 
@@ -100,6 +107,11 @@ namespace Group_Project_106._2
             userState.Text = "Loged Out";
             logoutBtn.Visibility = Visibility.Hidden;
 
+        }
+
+        private void HomeBtn(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = homepage;
         }
 
         private void Page1Btn(object sender, RoutedEventArgs e)
