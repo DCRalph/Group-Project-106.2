@@ -8,61 +8,87 @@
         Height="800" Width="400" Background="#FFFFFF">
     <Grid>
 
-        <TextBlock HorizontalAlignment="Left" FontFamily="Inter" FontSize="12" Foreground="#ff0000" Margin="139,10,0,771">Stay at home and Stay healthy</TextBlock>
-        <TextBlock Name="userState" HorizontalAlignment="Left" Margin="144,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164"/>
+        <TextBlock HorizontalAlignment="Left" FontFamily="Inter" FontSize="12" Foreground="#ff0000" Margin="148,23,0,758">Stay at home and Stay healthy</TextBlock>
 
 
-        <Button Click="Home_page_appointment" VerticalAlignment="Top" Margin="14,98,266,0" Height="20"  Width="120">Appointment</Button>
-        <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,130,266,0" Height="20" Width="120">Qr code</Button>
-        <Button Click="Home_page_confermation" VerticalAlignment="Top" Margin="14,162,266,0" Height="20" Width="120">Confirmation</Button>
-        <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="10,194,262,0" Height="20" Width="120">Symptoms</Button>
+        <Button Click="Home_page_appointment" VerticalAlignment="Top" Margin="14,103,266,0" Height="20"  Width="120">Appointment</Button>
+        <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,135,266,0" Height="20" Width="120">Qr code</Button>
+        <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="14,169,266,0" Height="20" Width="120">Symptoms</Button>
+        <Button Click="Home_page_confermation" VerticalAlignment="Top" Margin="14,194,266,0" Height="20" Width="120" Visibility="Hidden">Confirmation</Button>
 
-        <Image Source="images/covid.png" Margin="1,-2,266,716"/>
+        <Image Source="images/covid.png" Margin="10,8,257,706"/>
 
-        <Image Source="images/new.png" Margin="158,74,74,594"></Image>
+        <Image Source="images/new.png" Margin="183,62,49,606"></Image>
 
-        <TextBlock FontFamily="Inter" Margin="144,209,59,565" FontSize="15" FontWeight="Bold">New Covid-19 Cases List</TextBlock>
+        <TextBlock FontFamily="Inter" Margin="10,214,10,560" FontSize="15" TextAlignment="Center" FontWeight="Bold">New Covid-19 Cases List</TextBlock>
 
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="10,260,326,522" FontSize="15">NO.</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="84,260,235,522" FontSize="15">City</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="197,260,138,522" FontSize="15">Cases</TextBlock>
-        <TextBlock FontFamily="Inter" FontWeight="Bold" Margin="323,260,21,524" FontSize="15">Alerts</TextBlock>
+        <Grid Margin="10,250,10,102">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
 
-        <TextBlock FontWeight="Bold" Margin="10,297,361,476">1</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,297,266,476">Wellington</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,297,138,476">1000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,297,10,476" Foreground="#6B9467">Safe</TextBlock>
-
-
-
-        <TextBlock FontWeight="Bold" Margin="10,329,376,454">2</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,329,266,437">Auckland</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,329,157,454">1000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,329,10,454" Foreground="Red" Text="Dangerous"/>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,368,376,400">3</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="68,368,235,409" RenderTransformOrigin="0.399,0.493">Christchurch</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,368,157,416">100</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,449,10,324" Foreground="#6B9467">Safe</TextBlock>
-
-
-        <TextBlock FontWeight="Bold" Margin="10,412,376,356">4</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="60,412,238,358">Tauranga</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,412,152,358">10000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,412,10,372" Foreground="Red">Dangerous</TextBlock>
-
-        <TextBlock FontWeight="Bold" Margin="10,447,376,329">5</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="62,449,252,329">Dunedin</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="199,447,157,329">500</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,368,8,416" Foreground="#6B9467">Safe</TextBlock>
+            </Grid.RowDefinitions>
 
 
-        <TextBlock FontWeight="Bold" Margin="10,476,376,307">6</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="62,476,241,290">Hamilton</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="197,474,157,307">15000</TextBlock>
-        <TextBlock FontWeight="Bold" Margin="323,476,-1,307" Foreground="Red">Dangerous</TextBlock>
+            <TextBlock FontFamily="Inter" FontWeight="Bold" Grid.Row="0" Grid.Column="0" FontSize="15">NO.</TextBlock>
+            <TextBlock FontFamily="Inter" FontWeight="Bold" Grid.Row="0"  Grid.Column="1" FontSize="15">City</TextBlock>
+            <TextBlock FontFamily="Inter" FontWeight="Bold" Grid.Row="0"  Grid.Column="2" FontSize="15">Cases</TextBlock>
+            <TextBlock FontFamily="Inter" FontWeight="Bold" Grid.Row="0" Grid.Column="3" FontSize="15">Alerts</TextBlock>
+
+            <TextBlock FontWeight="Bold" Grid.Row="1" Grid.Column="0">1</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="1" Grid.Column="1">Wellington</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="1" Grid.Column="2">1000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="1" Grid.Column="3" Foreground="#6B9467">Safe</TextBlock>
+
+            <TextBlock FontWeight="Bold" Grid.Row="2" Grid.Column="0">2</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="2" Grid.Column="1">Auckland</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="2" Grid.Column="2">1000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="2" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="3" Grid.Column="0">3</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="3" Grid.Column="1">Christchurch</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="3" Grid.Column="2">100</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="3" Grid.Column="3" Foreground="#6B9467">Safe</TextBlock>
+
+            <TextBlock FontWeight="Bold" Grid.Row="4" Grid.Column="0">4</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="4" Grid.Column="1">Tauranga</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="4" Grid.Column="2">100000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="4" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+            <TextBlock FontWeight="Bold" Grid.Row="5" Grid.Column="0">5</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="5" Grid.Column="1">Dunedin</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="5" Grid.Column="2">500</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="5" Grid.Column="3" Foreground="#6B9467">Safe</TextBlock>
+
+            <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="0">6</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="1">Hamilton</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="2">100000</TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="6" Grid.Column="3" Foreground="Red" Text="Dangerous"/>
+
+        </Grid>
+
+
 
 
         <Button Click="backBtn" VerticalAlignment="Top" Margin="321,15,8,0" Height="28" Content="back"/>

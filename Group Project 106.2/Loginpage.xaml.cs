@@ -36,6 +36,8 @@ namespace Group_Project_106._2
     {
 
         public event LoginPageEvent Destoryed;
+        public event LoginPageEvent logedIn;
+
 
 
 
@@ -76,7 +78,8 @@ namespace Group_Project_106._2
                         loginStatusText.Foreground = Brushes.Black;
                         loginStatusText.Text = "";
 
-                        Destoryed?.Invoke();
+                        //Destoryed?.Invoke();
+                        logedIn?.Invoke();
 
                         break;
                     }

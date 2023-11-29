@@ -50,9 +50,9 @@ namespace Group_Project_106._2
             homepage.Destoryed += closeContent;
             login_page.Destoryed += closeContent;
             confirmation_page.Destoryed += closeContent;
-            qr_page.Destoryed += closeContent;
-            appointment_page.Destoryed += closeContent;
-            symptoms_page.Destoryed += closeContent;
+            //qr_page.Destoryed += closeContent;
+            //appointment_page.Destoryed += closeContent;
+            //symptoms_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
 
@@ -60,6 +60,12 @@ namespace Group_Project_106._2
             homepage._qr += delegate () { MainContent.Content = qr_page; };
             homepage._confermation += delegate () { MainContent.Content = confirmation_page; };
             homepage._symptons += delegate () { MainContent.Content = symptoms_page; };
+
+            login_page.logedIn += delegate () { MainContent.Content = homepage; };
+
+            appointment_page.Destoryed += delegate () { MainContent.Content = homepage; };
+            qr_page.Destoryed += delegate () { MainContent.Content = homepage; };
+            symptoms_page.Destoryed += delegate () { MainContent.Content = homepage; };
 
             userState.Text = "Loged Out";
 
