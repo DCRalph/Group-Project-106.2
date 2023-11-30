@@ -9,6 +9,7 @@
     <Grid>
         <Button Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" Width="66" Click="backBtn"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Certificate" VerticalAlignment="Top" Height="37" Width="169" FontSize="24" FontWeight="Bold" TextAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="732" Margin="34,58,0,0" VerticalAlignment="Top" Width="371" Source="/cert.png"/>
 
     </Grid>
 </UserControl>

@@ -175,6 +175,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="cert.png" />
     <Content Include="db.sqlite">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
