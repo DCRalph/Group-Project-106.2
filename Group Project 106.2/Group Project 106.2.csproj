@@ -39,7 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.2.1.21\lib\net461\Dapper.dll</HintPath>
+      <HintPath>..\packages\Dapper.2.1.24\lib\net461\Dapper.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -77,24 +77,48 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="adminPage.xaml.cs">
+      <DependentUpon>adminPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Appointment.xaml.cs">
       <DependentUpon>Appointment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="certificate.xaml.cs">
+      <DependentUpon>certificate.xaml</DependentUpon>
     </Compile>
     <Compile Include="Confirmation.xaml.cs">
       <DependentUpon>Confirmation.xaml</DependentUpon>
     </Compile>
     <Compile Include="globals.cs" />
+    <Compile Include="Homepage.xaml.cs">
+      <DependentUpon>Homepage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Qr Code.xaml.cs">
       <DependentUpon>Qr Code.xaml</DependentUpon>
     </Compile>
     <Compile Include="Symptoms.xaml.cs">
       <DependentUpon>Symptoms.xaml</DependentUpon>
     </Compile>
+    <Compile Include="user-vac.xaml.cs">
+      <DependentUpon>user-vac.xaml</DependentUpon>
+    </Compile>
+    <Page Include="adminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Appointment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="certificate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Confirmation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Homepage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,6 +146,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Symptoms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="user-vac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
