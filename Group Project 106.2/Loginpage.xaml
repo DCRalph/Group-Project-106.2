@@ -6,10 +6,9 @@
              xmlns:local="clr-namespace:Group_Project_106._2"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="400" Background="#F1F3F5">
-    <Grid >
+    <Grid>
 
-
-        <Button Content="Back" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Click="BackBtn" Height="49" Width="53"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="19,33,0,0" VerticalAlignment="Top" Click="BackBtn" Height="49" Width="53"/>
 
         <Image Source="images/covid19.png"
                    Height="190"
@@ -39,7 +38,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="41,398,0,0">
+                       Margin="53,400,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -51,7 +50,7 @@
 
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="41,468,0,0">
+                       Margin="53,470,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment= "Left" 
@@ -67,31 +66,30 @@
                                                  /></TextBlock>
             <TextBox Height="41.31" Width="313.97" Name="password" />
 
-            <!--<Grid>-->
+            <Grid>
 
-            <TextBlock Foreground="#181818"
+                <TextBlock Foreground="#181818"
                        FontSize="12"
                        TextAlignment="Left" VerticalAlignment="Top"
                        FontFamily="Poppins" Margin="0,0,0,0" Text="Remember Me"
                        
                            />
 
-            <TextBlock Foreground="#181818"
+                <TextBlock Foreground="#181818"
                        FontSize="12"
                        TextAlignment="Right"
                        FontFamily="Poppins" Margin="0,0,0,0" Text="Forgot Password"/>
 
 
-            <!--</Grid>-->
+            </Grid>
 
         </StackPanel>
+
+        <Button Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin="47,628,33,131" Content="Log IN" Click="SubmitBtn"/>
+        <Button Width="320" Height="42" Background="White" Foreground="#000000" FontSize="14" Margin="47,674,33,84" Content="Sign in With Google"/>
+        <Image Source="images/g.png" Height="30" Width="30" Margin="67,680,283,90" RenderTransformOrigin="1.367,0.422"/>
         <TextBlock Name="loginStatusText" HorizontalAlignment="Left" Margin="53,565,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314"/>
 
-        <Button Height="41.31" Background="#EA454C" Foreground="#FFFFFF" FontSize="14" Margin="40,624,40,135" Content="Log IN" Click="SubmitBtn"/>
-
-
-        <Button Width="320" Height="42" Background="White" Foreground="#000000" FontSize="14" Margin="40,682,40,76" Content="Sign in With Google"/>
-        <Image Source="images/g.png" Height="30" Width="30" Margin="74,688,296,82" RenderTransformOrigin="1.367,0.422"/>
 
 
     </Grid>

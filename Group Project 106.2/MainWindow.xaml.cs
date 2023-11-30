@@ -28,17 +28,11 @@ namespace Group_Project_106._2
 
     public partial class MainWindow : Window
     {
-        Homepage homepage = new Homepage();
-        adminPage adminPage = new adminPage();
-
         Loginpage login_page = new Loginpage();
         Appointment appointment_page = new Appointment();
         Qr_Code qr_page = new Qr_Code();
         Confirmation confirmation_page = new Confirmation();
         Symptoms symptoms_page = new Symptoms();
-        certificate certificate_page = new certificate();
-
-        user_vac user_vacPage = new user_vac();
 
         
 
@@ -52,43 +46,13 @@ namespace Group_Project_106._2
             InitializeComponent();
              MainContent.Content = login_page;
 
-            homepage.Destoryed += closeContent;
             login_page.Destoryed += closeContent;
             confirmation_page.Destoryed += closeContent;
-            //qr_page.Destoryed += closeContent;
-            //appointment_page.Destoryed += closeContent;
-            //symptoms_page.Destoryed += closeContent;
+            qr_page.Destoryed += closeContent;
+            appointment_page.Destoryed += closeContent;
+            symptoms_page.Destoryed += closeContent;
             
             appointment_page.Booked += Booked_Appointment;
-
-
-            login_page.logedIn += delegate () { goToHome(); };
-            login_page.logedInAdmin += delegate () { MainContent.Content = adminPage; };
-
-            homepage.Logout += delegate () {
-                logout();
-                MainContent.Content = login_page;
-            };
-
-            adminPage.Logout += delegate () {
-                logout();
-                MainContent.Content = login_page;
-            };
-
-            homepage._appointment += delegate () { MainContent.Content = appointment_page; };
-            homepage._qr += delegate () { MainContent.Content = qr_page; };
-            homepage._confermation += delegate () { MainContent.Content = confirmation_page; };
-            homepage._symptons += delegate () { MainContent.Content = symptoms_page; };
-            homepage._certificate += delegate () { MainContent.Content = certificate_page; };
-
-
-
-            appointment_page.Destoryed += delegate () { goToHome(); };
-            qr_page.Destoryed += delegate () { goToHome(); };
-            symptoms_page.Destoryed += delegate () { goToHome(); };
-            certificate_page.Destoryed += delegate () { goToHome(); };
-
-            user_vacPage.Destoryed += delegate () { goToHome(); };
 
             userState.Text = "Loged Out";
 
@@ -128,29 +92,14 @@ namespace Group_Project_106._2
             }
         }
 
-        private void goToHome()
-        {
-            MainContent.Content = homepage;
-            homepage.updateUserState();
-        }
-
         private void LogoutBtn(object sender, RoutedEventArgs e)
-        {
-            logout();
-        }
-
-        private void logout()
         {
             globals.globalUser = null;
 
 
             userState.Text = "Loged Out";
             logoutBtn.Visibility = Visibility.Hidden;
-        }
 
-        private void HomeBtn(object sender, RoutedEventArgs e)
-        {
-            goToHome();
         }
 
         private void Page1Btn(object sender, RoutedEventArgs e)
@@ -183,15 +132,25 @@ namespace Group_Project_106._2
             MainContent.Content = confirmation_page;
         }
 
-        private void adminBtn(object sender, RoutedEventArgs e)
-        {
-            MainContent.Content = adminPage;
 
-        }
 
-        private void user_vacBtn(object sender, RoutedEventArgs e)
+        public void test()
         {
-            MainContent.Content = user_vacPage;
+            string username = "test";
+            string password = "12345";
+
+            using (IDbConnection connection = new SQLiteConnection(globals.source))
+            {
+                connection.Open();
+                string queryString = "select * from Users Where username = '" + username + "' and password = '" + password + "'";
+                var x = connection.Query(queryString);
+                if(x.Count() > 1)
+                {
+                    
+                }
+                var y = 0;
+            }
         }
+        //-------------------
     }
 }
