@@ -9,8 +9,10 @@ namespace Group_Project_106._2
 {
          class User
         {
-            public  String username;
-            public  String password;
+        public  String username;
+        public  String password;
+        public String city;
+        public int vaccinated;
         public int isAdmin;
 
 
