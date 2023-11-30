@@ -36,6 +36,9 @@ namespace Group_Project_106._2
     {
 
         public event LoginPageEvent Destoryed;
+        public event LoginPageEvent logedIn;
+        public event LoginPageEvent logedInAdmin;
+
 
 
 
@@ -61,38 +64,35 @@ namespace Group_Project_106._2
             using (IDbConnection connection = new SQLiteConnection(globals.source))
             {
                 connection.Open();
-                //var x = connection.Query<User>("select * from Users Where username=" + username + " password=" + password);
-                //var y = x.ToList();
-
-                string queryString = "select * from Users Where username = '" + user.username + "' and password = '" + user.password + "'";
-                var x = connection.Query<User>(queryString);
+                var x = connection.Query<User>("select * from Users");
+                var y = x.ToList();
 
                 bool loginSuccess = false;
 
-                if(x.Count() == 1)
+                foreach (var item in y)
                 {
-                    loginSuccess = true;
+                    loginSuccess = user.match(item);
 
-                    globals.globalUser = x.Single();
+                    if (loginSuccess)
+                    {
+                        globals.globalUser = item;
+                        loginStatusText.Foreground = Brushes.Black;
+                        loginStatusText.Text = "";
 
-                    Destoryed?.Invoke();
+                        //Destoryed?.Invoke();
+                        //logedIn?.Invoke();
+
+                        if (item.isAdmin == 1)
+                        {
+                            logedInAdmin?.Invoke();
+                        } else
+                        {
+                            logedIn?.Invoke();
+                        }
+
+                        break;
+                    }
                 }
-
-                //foreach (var item in y)
-                //{
-                //    loginSuccess = user.match(item);
-
-                //    if (loginSuccess)
-                //    {
-                //        globals.globalUser = item;
-                //        loginStatusText.Foreground = Brushes.Black;
-                //        loginStatusText.Text = "";
-
-                //        Destoryed?.Invoke();
-
-                //        break;
-                //    }
-                //}
 
                 if (!loginSuccess) {
                     globals.globalUser = null;
@@ -101,7 +101,7 @@ namespace Group_Project_106._2
 
                 }
 
-                //int stop = 0;
+                int stop = 0;
             }
         }
     }
