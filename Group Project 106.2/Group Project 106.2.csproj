@@ -83,9 +83,6 @@
     <Compile Include="Appointment.xaml.cs">
       <DependentUpon>Appointment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="certificate.xaml.cs">
-      <DependentUpon>certificate.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Confirmation.xaml.cs">
       <DependentUpon>Confirmation.xaml</DependentUpon>
     </Compile>
@@ -99,18 +96,11 @@
     <Compile Include="Symptoms.xaml.cs">
       <DependentUpon>Symptoms.xaml</DependentUpon>
     </Compile>
-    <Compile Include="user-vac.xaml.cs">
-      <DependentUpon>user-vac.xaml</DependentUpon>
-    </Compile>
     <Page Include="adminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Appointment.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="certificate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,10 +136,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Symptoms.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="user-vac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

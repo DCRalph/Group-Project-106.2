@@ -35,26 +35,11 @@ namespace Group_Project_106._2
         public event confirmPageEvent _qr;
         public event confirmPageEvent _confermation;
         public event confirmPageEvent _symptons;
-        public event confirmPageEvent _certificate;
 
         public Homepage()
         {
             InitializeComponent();
-
-
-
-        }
-
-        public void updateUserState()
-        {
-            if (globals.globalUser == null)
-            {
-                userState.Text = "Loged Out";
-            }
-            else
-            {
-                userState.Text = "Loged In as " + globals.globalUser.username;
-            }
+               
         }
 
         private void backBtn(object sender, RoutedEventArgs e)
@@ -85,11 +70,6 @@ namespace Group_Project_106._2
         private void logout(object sender, RoutedEventArgs e)
         {
             Logout?.Invoke();
-        }
-
-        private void Home_page_cert(object sender, RoutedEventArgs e)
-        {
-            _certificate?.Invoke();
         }
     }
 }

@@ -39,7 +39,7 @@
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="41,398,0,0">
+                       Margin="53,400,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment="Left" 
@@ -51,7 +51,7 @@
 
         <StackPanel HorizontalAlignment="Left" 
                        VerticalAlignment="Top"
-                       Margin="41,468,0,0">
+                       Margin="53,470,0,0">
             <TextBlock Foreground="#181818"
                        FontSize="14"
                        TextAlignment= "Left" 

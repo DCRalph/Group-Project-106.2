@@ -14,13 +14,11 @@
         <Button Click="backBtn" VerticalAlignment="Top" Margin="319,10,10,0" Height="28" Content="back"/>
         <Button Click="logout" VerticalAlignment="Top" Margin="319,43,10,0" Height="28" Content="Logout"/>
 
-        <TextBlock Name="userState" HorizontalAlignment="Left" Margin="148,47,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" Height="16"/>
+
 
         <Button Click="Home_page_appointment" VerticalAlignment="Top" Margin="14,103,266,0" Height="20"  Width="120">Appointment</Button>
-        <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,128,266,0" Height="20" Width="120">Qr code</Button>
-        <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="14,153,266,0" Height="20" Width="120">Symptoms</Button>
-        <Button Click="Home_page_cert" VerticalAlignment="Top" Margin="14,178,266,0" Height="20" Width="120">Certificate</Button>
-
+        <Button Click="Home_page_qr" VerticalAlignment="Top" Margin="14,135,266,0" Height="20" Width="120">Qr code</Button>
+        <Button Click="Home_page_symptons" VerticalAlignment="Top" Margin="14,169,266,0" Height="20" Width="120">Symptoms</Button>
         <Button Click="Home_page_confermation" VerticalAlignment="Top" Margin="14,194,266,0" Height="20" Width="120" Visibility="Hidden">Confirmation</Button>
 
         <Image Source="images/covid.png" Margin="10,8,257,706"/>
