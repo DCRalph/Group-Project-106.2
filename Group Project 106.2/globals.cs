@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Group_Project_106._2
 {
-         class User
+        class User
         {
-        public  String username;
-        public  String password;
+        public String username;
+        public String password;
         public String city;
         public int vaccinated;
         public int isAdmin;
@@ -29,6 +29,14 @@ namespace Group_Project_106._2
             return false;
         }
 
+    }
+
+    class Appoitment
+    {
+        public String name;
+        public String email;
+        public String phone;
+        public String gender;
     }
 
     static class globals
