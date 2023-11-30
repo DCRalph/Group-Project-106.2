@@ -36,6 +36,9 @@ namespace Group_Project_106._2
         Qr_Code qr_page = new Qr_Code();
         Confirmation confirmation_page = new Confirmation();
         Symptoms symptoms_page = new Symptoms();
+        certificate certificate_page = new certificate();
+
+        user_vac user_vacPage = new user_vac();
 
         
 
@@ -59,7 +62,7 @@ namespace Group_Project_106._2
             appointment_page.Booked += Booked_Appointment;
 
 
-            login_page.logedIn += delegate () { MainContent.Content = homepage; };
+            login_page.logedIn += delegate () { goToHome(); };
             login_page.logedInAdmin += delegate () { MainContent.Content = adminPage; };
 
             homepage.Logout += delegate () {
@@ -76,11 +79,16 @@ namespace Group_Project_106._2
             homepage._qr += delegate () { MainContent.Content = qr_page; };
             homepage._confermation += delegate () { MainContent.Content = confirmation_page; };
             homepage._symptons += delegate () { MainContent.Content = symptoms_page; };
+            homepage._certificate += delegate () { MainContent.Content = certificate_page; };
 
 
-            appointment_page.Destoryed += delegate () { MainContent.Content = homepage; };
-            qr_page.Destoryed += delegate () { MainContent.Content = homepage; };
-            symptoms_page.Destoryed += delegate () { MainContent.Content = homepage; };
+
+            appointment_page.Destoryed += delegate () { goToHome(); };
+            qr_page.Destoryed += delegate () { goToHome(); };
+            symptoms_page.Destoryed += delegate () { goToHome(); };
+            certificate_page.Destoryed += delegate () { goToHome(); };
+
+            user_vacPage.Destoryed += delegate () { goToHome(); };
 
             userState.Text = "Loged Out";
 
@@ -120,6 +128,12 @@ namespace Group_Project_106._2
             }
         }
 
+        private void goToHome()
+        {
+            MainContent.Content = homepage;
+            homepage.updateUserState();
+        }
+
         private void LogoutBtn(object sender, RoutedEventArgs e)
         {
             logout();
@@ -136,7 +150,7 @@ namespace Group_Project_106._2
 
         private void HomeBtn(object sender, RoutedEventArgs e)
         {
-            MainContent.Content = homepage;
+            goToHome();
         }
 
         private void Page1Btn(object sender, RoutedEventArgs e)
@@ -173,6 +187,11 @@ namespace Group_Project_106._2
         {
             MainContent.Content = adminPage;
 
+        }
+
+        private void user_vacBtn(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = user_vacPage;
         }
     }
 }
