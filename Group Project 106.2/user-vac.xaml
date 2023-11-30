@@ -45,6 +45,7 @@
         <TextBlock FontFamily="Inter" Margin="10,326,10,448" FontSize="15" TextAlignment="Center" FontWeight="Bold" Text="Vaccinate City List"/>
         <TextBlock FontFamily="Inter" Margin="10,69,10,682" FontSize="15" TextAlignment="Center" FontWeight="Bold" Foreground="Red"><Run Text="Get vaccinated. Do your part. "/><LineBreak/><Run Text="Protect yourself. Protect each other."/></TextBlock>
         <Button Click="backBtn" Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="34" Width="51"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="65,123,0,0" VerticalAlignment="Top" Width="282" Source="/user-vac.png"/>
 
     </Grid>
 </UserControl>
